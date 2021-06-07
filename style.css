@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #72005F;
+    --beige: #BAA193;
+    --light-beige: #ebe4e0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 90%;
+    height: 100vh;
+}
+
+.content img {
+    max-height: 80vh;
+}
+
+.content .wisegoat h3 {
+    color: var(--beige);
+    font-size: 3rem;
+}
+
+.content .wisegoat h2 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.button {
+    background: var(--purple);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.advice-header {
+    width: 100%;
+    padding: 1rem;
+}
+
+.advice-header .wisegoat h3 {
+    color: var(--beige);
+    font-size: 1rem;
+}
+
+.advice-header .wisegoat h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light-beige);
+    min-width: 50%;
+}
+
+.advice {
+    padding: 1rem 2rem;
+}
+
+.advice q {
+    color: var(--purple);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.advice blockquote {
+    font-size: 1.5rem;
+    color: var(--beige);
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+
+.goat-img img {
+    height: 299px;
+    width: 300px;
+}
