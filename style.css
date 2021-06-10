@@ -80,11 +80,12 @@ main {
     align-items: center;
     justify-content: space-between;
     background: var(--light-beige);
-    min-width: 50%;
+   width: 50%;
 }
 
 .advice {
     padding: 1rem 2rem;
+    /* width: 100%; */
 }
 
 .advice q {
@@ -99,7 +100,7 @@ main {
     color: var(--beige);
     position: relative;
     left: 5rem;
-    top: 2rem;
+    top: 1rem;
 }
 
 .goat-img img {

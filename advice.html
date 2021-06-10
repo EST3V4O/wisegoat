@@ -19,7 +19,7 @@
     <main>
         <section class="card">
             <div class="advice">
-                <q>skjdnkjsndkns</q>
+                <q id="advice-content"></q>
                 <blockquote>- Goat</blockquote>
             </div>
             <div class="goat-img">
@@ -27,5 +27,15 @@
             </div>
         </section>
     </main>
+    <script>
+       window.addEventListener('DOMContentLoaded', async () => {
+            const url = 'https://api.adviceslip.com/advice'
+            const response = await fetch(url)
+            const data = await response.json()
+
+            const advice = data.slip
+            document.getElementById('advice-content').innerHTML = advice.advice
+       })
+    </script>
 </body>
 </html>
